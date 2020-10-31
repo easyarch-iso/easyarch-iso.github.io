@@ -1,0 +1,12 @@
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-transitions: true;
+
+$theme-colors: (
+    "primary": #00539C
+);
+
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
