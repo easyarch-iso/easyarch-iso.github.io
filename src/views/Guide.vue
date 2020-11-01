@@ -144,7 +144,7 @@
               <p>
                 <b>NOTE :</b> This step is no longer needed from version
                 2020.10. So skip it if you are using an ISO of version 2020.10
-                or later. But if you are using older version than please perform
+                or later. But if you are using older version then please perform
                 this step.
               </p>
               <p>
