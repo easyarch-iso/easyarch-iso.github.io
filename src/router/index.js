@@ -12,7 +12,14 @@ const routes = [
   {
     path: "/download",
     name: "Download",
-    component: () => import(/* webpackChunkName: "download" */ "../views/Download.vue")
+    component: () =>
+      import(/* webpackChunkName: "download" */ "../views/Download.vue")
+  },
+  {
+    path: "/release-info",
+    name: "Release Info",
+    component: () =>
+      import(/* webpackChunkName: "download" */ "../views/ReleaseInfo.vue")
   },
   {
     path: "/git",
@@ -22,12 +29,14 @@ const routes = [
   {
     path: "/guide",
     name: "Guide",
-    component: () => import(/* webpackChunkName: "guide" */ "../views/Guide.vue")
+    component: () =>
+      import(/* webpackChunkName: "guide" */ "../views/Guide.vue")
   },
   {
     path: "/thanks",
     name: "Thanks",
-    component: () => import(/* webpackChunkName: "thanks" */ "../views/Thanks.vue")
+    component: () =>
+      import(/* webpackChunkName: "thanks" */ "../views/Thanks.vue")
   },
   {
     path: "/about",

@@ -7,9 +7,9 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "./style/main.scss";
 
 // Install BootstrapVue
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
 // Optionally install the BootstrapVue icon components plugin
-Vue.use(IconsPlugin)
+Vue.use(IconsPlugin);
 
 Vue.config.productionTip = false;
 

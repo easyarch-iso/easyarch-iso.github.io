@@ -31,7 +31,7 @@
           </b-button>
           <b-button to="/git" variant="warning">
             <b-icon icon="gear"></b-icon>
-            Git Repo
+            Source
           </b-button>
           <b-button to="/about" variant="info">
             <b-icon icon="question-diamond"></b-icon>
@@ -50,17 +50,18 @@ export default {
   data() {
     return {
       screenshots: [
-        require("../assets/screenshots/installer_1.png"),
-        require("../assets/screenshots/installer_2.png"),
-        require("../assets/screenshots/installer_3.png"),
-        require("../assets/screenshots/installer_4.png"),
-        require("../assets/screenshots/installer_5.png"),
-        require("../assets/screenshots/vm_1.png"),
-        require("../assets/screenshots/startmenu.png"),
-        require("../assets/screenshots/filemanager.png"),
-        require("../assets/screenshots/settings.png"),
-      ],
+        require("../assets/screenshots/installer_1.jpg"),
+        require("../assets/screenshots/installer_2.jpg"),
+        require("../assets/screenshots/installer_3.jpg"),
+        require("../assets/screenshots/installer_4.jpg"),
+        require("../assets/screenshots/layout_vt.jpg"),
+        require("../assets/screenshots/wallpapers.jpg"),
+        require("../assets/screenshots/settings.jpg"),
+        require("../assets/screenshots/mac_theme.jpg"),
+        require("../assets/screenshots/win10_theme.jpg"),
+        require("../assets/screenshots/winxp_theme.jpg")
+      ]
     };
-  },
+  }
 };
 </script>

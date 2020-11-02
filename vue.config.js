@@ -9,14 +9,14 @@ module.exports = {
       // entry for the page, mandatory
       entry: "src/main.js",
       // the source template
-      template: "html/index.html",
-    },
+      template: "html/index.html"
+    }
   },
   configureWebpack: {
     plugins: [
       new CopyWebpackPlugin([
-        {from: path.resolve("./html"), to: path.resolve("./docs")},
-      ]),
-    ],
-  },
+        { from: path.resolve("./html"), to: path.resolve("./docs") }
+      ])
+    ]
+  }
 };

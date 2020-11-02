@@ -1,7 +1,11 @@
 <template>
   <div>
     <b-container fluid class="pl-0 ml-0 pr-0 mr-0">
-      <b-row class="justify-content-center" v-for="(release, index) in releases" :key="index">
+      <b-row
+        class="justify-content-center"
+        v-for="(release, index) in releases"
+        :key="index"
+      >
         <b-col cols="12" md="10" lg="8" class="pb-3">
           <b-card
             :header="release['title']"
@@ -11,28 +15,39 @@
           >
             <b-card-body>
               <b-container fluid>
-                <h5>Architecture: {{release['arch']}}</h5>
+                <h5>Architecture: {{ release["arch"] }}</h5>
                 <h5>Download live ISO from sourceforge</h5>
                 <b-row class="justify-content-center">
-                  <a :href="buildDownloadUrl(release['isoName'])" target="blank">
+                  <a
+                    :href="buildDownloadUrl(release['isoName'])"
+                    target="blank"
+                  >
                     <img
                       alt="Download EasyArch"
                       src="https://a.fsdn.com/con/app/sf-download-button"
                       width="276"
                       height="48"
-                      srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"
+                      srcset="
+                        https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x
+                      "
                     />
                   </a>
                 </b-row>
                 <b-row class="justify-content-center pt-3">
-                  <a :href="buildDownloadUrl(release['isoName'])" target="blank">
-                    <img alt="SourceForge" :src="buildDownloadCounterBadgeUrl(release['isoName'])" />
+                  <a
+                    :href="buildDownloadUrl(release['isoName'])"
+                    target="blank"
+                  >
+                    <img
+                      alt="SourceForge"
+                      :src="buildDownloadCounterBadgeUrl(release['isoName'])"
+                    />
                   </a>
                 </b-row>
                 <h5>MD5 Sum:</h5>
-                <code>{{release['md5Sum']}}</code>
+                <code>{{ release["md5Sum"] }}</code>
                 <h5>SHA1 Sum:</h5>
-                <code>{{release['sha1Sum']}}</code>
+                <code>{{ release["sha1Sum"] }}</code>
                 <b-container fluid class="pt-4 pl-0 ml-0 pr-0 mr-0">
                   <h5>Minimum system requirements:</h5>
                   <p>
@@ -40,15 +55,15 @@
                       <b-tbody>
                         <b-tr>
                           <b-td class="bg-dark text-light">Processor</b-td>
-                          <b-td>{{release['procReq']}}</b-td>
+                          <b-td>{{ release["procReq"] }}</b-td>
                         </b-tr>
                         <b-tr>
                           <b-td class="bg-dark text-light">RAM</b-td>
-                          <b-td>{{release['ramReq']}}</b-td>
+                          <b-td>{{ release["ramReq"] }}</b-td>
                         </b-tr>
                         <b-tr>
                           <b-td class="bg-dark text-light">HDD Space</b-td>
-                          <b-td>{{release['hddReq']}}</b-td>
+                          <b-td>{{ release["hddReq"] }}</b-td>
                         </b-tr>
                       </b-tbody>
                     </b-table-simple>

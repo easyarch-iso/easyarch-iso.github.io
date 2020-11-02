@@ -51,12 +51,25 @@
                   rel="noopener noreferrer"
                   >Rufus</a
                 >
-                etc to make bootable pendrives. For Linux users, you can use dd,
+                etc to make bootable pendrives. For Linux users, you can use
+                <a
+                  href="https://linux.die.net/man/1/dd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  dd </a
+                >,
                 <a
                   href="https://www.balena.io/etcher/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >balenaEtcher</a
+                >,
+                <a
+                  href="https://gparted.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GParted</a
                 >
                 or any application you are comfortable to use. You can also burn
                 the ISO to a dvd if you have any dvd writer.

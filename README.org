@@ -1,0 +1,25 @@
+* Website for EasyArch ISO
+  
+  This is built upon vue.js and bootstrap 4. Additionally vue router
+  is also used to provide some routes.
+  
+** Project setup
+   #+BEGIN_SRC shell
+     npm install
+   #+END_SRC
+
+** Compiles and hot-reloads for development
+   #+BEGIN_SRC shell
+     npm run serve
+   #+END_SRC
+
+** Compiles and minifies for production
+   #+BEGIN_SRC shell
+     npm run build
+   #+END_SRC
+
+** Lints and fixes files
+   #+BEGIN_SRC shell
+     npm run lint
+   #+END_SRC
+

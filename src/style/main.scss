@@ -4,9 +4,22 @@ $enable-gradients: true;
 $enable-transitions: true;
 
 $theme-colors: (
-    "primary": #00539C
+  "primary": #00539c
 );
 
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-vue/src/index.scss";
 
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'node_modules/bootstrap-vue/src/index.scss';
+.nav-link {
+  border: 1px solid #00539c;
+  transition: border 0.25s ease-in-out;
+
+  &:hover {
+    border: 1px solid gray;
+  }
+}
+
+.router-link-exact-active {
+  font-weight: bold;
+  text-decoration: underline !important;
+}
